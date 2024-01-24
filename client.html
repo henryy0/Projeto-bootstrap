@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Empresa - Desenvolvimento de Software</title>
+    <title>CollaboraPro - Desenvolvimento de Software</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="client.css">
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="about.html">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Clientes</a>
+                        <a class="nav-link" href="client.html">Clientes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="team.html">Time</a>
@@ -52,80 +52,191 @@
         <p>Sua Solução Digital</p>
     </header>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Informações do Cliente</h2>
-                <p>Nome: João da Silva</p>
-                <p>Email: joao@email.com</p>
-                <p>Telefone: (11) 1234-5678</p>
+        <!-- Adicione estas classes ao seu HTML -->
+<div class="container mt-5">
+    <h2>Nossos Clientes</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Cliente 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/banner2.jpg" class="card-img-top" alt="Logo Cliente 1">
+                <div class="card-body">
+                    <h5 class="card-title">Empresa Tech Innovations</h5>
+                    <p class="card-text">Desenvolvimento de soluções inovadoras para impulsionar o crescimento.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clientModal1">Detalhes</button>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h2>Projetos Atuais</h2>
-                <ul>
-                    <li>Projeto Bolacha - Desenvolvimento Web</li>
-                    <li>Projeto Preguiça - Aplicativo Móvel</li>
-                    <li>Projeto Careca - Integração de Sistemas</li>
-                </ul>
+        </div>
+
+        <!-- Cliente 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="caminho/para/imagem-cliente2.jpg" class="card-img-top" alt="Logo Cliente 2">
+                <div class="card-body">
+                    <h5 class="card-title">Consultoria Global</h5>
+                    <p class="card-text">Parceria estratégica para desenvolvimento personalizado e eficiente.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clientModal2">Detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cliente 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="caminho/para/imagem-cliente3.jpg" class="card-img-top" alt="Logo Cliente 3">
+                <div class="card-body">
+                    <h5 class="card-title">Soluções WebCorp</h5>
+                    <p class="card-text">Transformando ideias em realidade digital.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clientModal3">Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Modal Cliente 1 -->
+    <div class="modal fade" id="clientModal1" tabindex="-1" aria-labelledby="clientModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientModal1Label">Empresa Tech Innovations</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/banner.png" alt="Logo Cliente 1" class="mb-3 client-logo">
+                    <h2>Projetos Atuais</h2>
+                    <ul>
+                        <li>Projeto Bolacha - Desenvolvimento Web</li>
+                        <li>Projeto Inovação - Aplicativo Móvel</li>
+                        <li>Projeto Eficiência - Integração de Sistemas</li>
+                    </ul>
+
+                    <div class="col-md-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projetoDestaqueModal">
+                            <img src="img/banner.png" class="card-img-top" alt="Projeto Destaque">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Destaque</h5>
+                                <p class="card-text">Solução inovadora para gerenciamento de projetos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <h2>Depoimento</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Estamos extremamente satisfeitos com os serviços da CollaboraPro. Eles superam nossas expectativas a cada projeto."</p>
+                    </blockquote>
+
+                    <h2>Desempenho dos Projetos</h2>
+                    <canvas id="projetoDesempenho1" width="400" height="200"></canvas>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entre em Contato</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2>Produtos em Destaque</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/banner.png" class="card-img-top" alt="Software 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Software 1</h5>
-                            <p class="card-text">Solução inovadora para gerenciamento de projetos.</p>
-                            <a href="#" class="btn btn-primary">Detalhes</a>
+    <!-- Modal Cliente 2 -->
+    <div class="modal fade" id="clientModal2" tabindex="-1" aria-labelledby="clientModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientModal2Label">Consultoria Global</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="caminho/para/logo_cliente2.png" alt="Logo Cliente 2" class="mb-3 client-logo">
+                    <h2>Projetos Atuais</h2>
+                    <ul>
+                        <li>Projeto Estratégia - Consultoria Empresarial</li>
+                        <li>Projeto Inovação - Desenvolvimento de Estratégias</li>
+                        <li>Projeto Eficiência - Otimização de Processos</li>
+                    </ul>
+
+                    <div class="col-md-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projetoDestaqueModal">
+                            <img src="img/banner.png" class="card-img-top" alt="Projeto Destaque">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Destaque</h5>
+                                <p class="card-text">Parceria estratégica para desenvolvimento personalizado e eficiente.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="bg-primary text-white py-5">
-        <div class="container">
-            <h2>Depoimento</h2>
-            <div class="row">
-                <div class="col-md-4">
+                    <h2>Depoimento</h2>
                     <blockquote class="blockquote">
-                        <p class="mb-0">"Exclente equipe de Desenvolvimento. Entregam além das nossas expectativas"</p>
+                        <p class="mb-0">"A CollaboraPro é uma parceira essencial para o nosso sucesso. Seu comprometimento e expertise são incomparáveis."</p>
                     </blockquote>
+
+                    <h2>Desempenho dos Projetos</h2>
+                    <canvas id="projetoDesempenho2" width="400" height="200"></canvas>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entre em Contato</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="py-5">
-        <div class="container">
-            <h2>Desempenho de Projeto</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <canvas id="projetoDesempenho" width="400" height="200"></canvas>
+    <!-- Modal Cliente 3 -->
+    <div class="modal fade" id="clientModal3" tabindex="-1" aria-labelledby="clientModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientModal3Label">Soluções WebCorp</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-md-6">
-                    <p>Visualização Grafíca do Desempenho dos projetos ao longo do tempo.</p>
+                <div class="modal-body">
+                    <img src="caminho/para/logo_cliente3.png" alt="Logo Cliente 3" class="mb-3 client-logo">
+                    <h2>Projetos Atuais</h2>
+                    <ul>
+                        <li>Projeto WebDesign - Design de Interfaces Web</li>
+                        <li>Projeto E-commerce - Desenvolvimento de Plataforma de Comércio Eletrônico</li>
+                        <li>Projeto Inovação - Integração de Tecnologias Emergentes</li>
+                    </ul>
+
+                   <div class="col-md-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projetoDestaqueModal">
+                            <img src="img/banner.png" class="card-img-top" alt="Projeto Destaque">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Destaque</h5>
+                                <p class="card-text">Transformando ideias em realidade digital.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Depoimento</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"A CollaboraPro é nossa parceira de confiança. Seu trabalho inovador transformou nossa presença digital."</p>
+                    </blockquote>
+
+                    <h2>Desempenho dos Projetos</h2>
+                    <canvas id="projetoDesempenho3" width="400" height="200"></canvas>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entre em Contato</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Estamos aqui para ajudar. Entre em contanto conosco para discutir suas necessidades</p>
-            <a href="Malito:contanto@desenvolvedora.com" class="btn btn-primary">Enviar Email</a>
-        </div>
-    </section>
+    <!-- Adicione mais modais conforme necessário -->
 
-     <!-- Footer -->
-     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
         <!-- Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
@@ -186,29 +297,11 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-      // Código para inicializar o gráfico de desempenho do projeto (exemplo)
-      var ctx = document.getElementById('projetoDesempenho').getContext('2d');
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-          datasets: [{
-            label: 'Projeto Bolacha',
-            data: [10, 15, 7, 22, 18, 25],
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 2,
-            fill: false
-          }]
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-        }
-      });
-    </script>
+    <script src="client.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
