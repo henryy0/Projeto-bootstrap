@@ -3,194 +3,222 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CollaboraPro - Desenvolvimento de Software</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #495057;
-        }
-
-        .navbar {
-            background-color: #343a40;
-        }
-
-        .navbar-dark .navbar-toggler-icon {
-            background-color: #fff;
-        }
-
-        .navbar-brand {
-            color: #fff;
-            font-weight: bold;
-        }
-
-        .navbar-nav .nav-link {
-            color: #fff;
-        }
-
-        .navbar-toggler {
-            border-color: #fff;
-        }
-
-        .jumbotron {
-            background: url('https://via.placeholder.com/1920x500') center/cover no-repeat;
-            color: #fff;
-            text-align: center;
-            padding: 100px 0;
-            margin-bottom: 0;
-        }
-
-        .jumbotron h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .jumbotron p {
-            font-size: 1.2rem;
-        }
-
-        .services {
-            background-color: #fff;
-            padding: 80px 0;
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            color: #007bff;
-        }
-
-        .service-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #007bff;
-            margin-top: 10px;
-        }
-
-        .testimonials {
-            background-color: #f8f9fa;
-            padding: 80px 0;
-        }
-
-        .testimonial {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial p {
-            font-style: italic;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Empresa - Desenvolvimento de Software</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="About.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">CollaboraPro</a>
+            <a class="navbar-brand me-5" href="#">
+                <img src="img/Logo sem fundo.png" alt="Logo" height="60">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nós</a>
+                        <a class="nav-link" href="service.html">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
+                        <a class="nav-link" href="about.html">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="client.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
+                <a href="contact.html" class="btn btn-outline-primary">Contato</a>
             </div>
         </div>
     </nav>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="display-2">Transformando Ideias em Software</h1>
-            <p class="lead">Desenvolvemos soluções inovadoras para impulsionar o seu negócio.</p>
+    <!-- Conteudo da pagina Sobre -->
+
+
+
+    <div class="container-fluid p-0">
+        <div class="row ">
+            <img src="img/Quem somos Finalizado.jpg" alt="">
         </div>
     </div>
 
-    <!-- Services Section -->
-    <div class="services">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <i class="fas fa-code service-icon"></i>
-                    <h3 class="service-title">Desenvolvimento Web</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-mobile-alt service-icon"></i>
-                    <h3 class="service-title">Desenvolvimento Mobile</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-cogs service-icon"></i>
-                    <h3 class="service-title">Integrações Sistêmicas</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+    <div class="container">
+        <div class="row pt-5 pb-3">
+            <div class="col-12">
+                <h3>A melhor forma para se organizar, crescer e se desenvolver é planejar e agir estrategicamente.</h3>
             </div>
         </div>
-    </div>
-
-    <!-- Testimonials Section -->
-    <div class="testimonials">
-        <div class="container">
-            <h2 class="text-center mb-5">O que nossos clientes dizem</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Excelente trabalho da equipe CollaboraPro! Eles entregaram um software personalizado que superou nossas expectativas."</p>
-                        <p class="text-end"><strong>Cliente Satisfeito</strong></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"A abordagem colaborativa da CollaboraPro realmente fez a diferença no sucesso do nosso projeto. Recomendo!"</p>
-                        <p class="text-end"><strong>Parceiro de Negócios</strong></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Trabalhar com a CollaboraPro foi uma experiência excepcional. Profissionalismo e qualidade incomparáveis."</p>
-                        <p class="text-end"><strong>Cliente Leal</strong></p>
+        <div class="row">
+            <div class="col-md-4 mt-2 mb-2">
+                <div class="card p-3">
+                    <div class="card-text"> Planejar e agir estrategicamente são habilidades essenciais 
+                        para alcançar seus objetivos pessoais e profissionais.
+                        <br>Enxergue o planejamento estratégico é ele que vai fazer com que a empresa caminhe para 
+                        o crescimento sem perder a sua identidade ao longo do trajeto.
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="col-md-4 mt-2 mb-2">
+                <div class="card  p-3">
+                    <div class="card-text">Padronizar processos: você pode definir e repetir as melhores práticas
+                         para garantir a qualidade e a eficiência das suas operações.
+                         <br>Otimizar processos: você pode analisar e melhorar os seus métodos de trabalho,
+                        eliminando gargalos e desperdícios.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+                <div class="card  p-3">
+                    <div class="card-text">Integrar processos: você pode alinhar e conectar as diferentes áreas e funções da sua empresa, facilitando a comunicação e a colaboração.
+                        <br>Melhorar resultados: você pode aumentar a performance e o engajamento da sua equipe, alcançando as suas metas e objetivos.
+                    </div>
+                </div>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 CollaboraPro. Todos os direitos reservados.</p>
+            <div class="col-md-4 mt-2 mb-2">
+
+                <!--auteração-->
+                <div class="row pt-5 pb-3">
+
+                    <div class="col-md-4 mt-2 mb-2">
+                        <h4>Missão</h4>
+                    </div>
+
+                </div>
+                <!--auteração-->
+
+                <div class="card p-3">
+                    <div class="card-text">Nossa missão é colaborar com as organizações para que alcancem seu pleno potencial. 
+                        Estabelecemos uma parceira de confiança pronta a servir e focada nos resultados dos nossos clientes.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+
+                <!--auteração-->
+                <div class="row pt-5 pb-3">
+
+                    <div class="col-md-4 mt-2 mb-2">
+                        <h4>Visão</h4>
+                    </div>
+
+                </div>
+                <!--auteração-->
+
+                <div class="card  p-3">
+                    <div class="card-text">Ser reconhecida pela excelência de seus serviços e consolidar-se como empresa parceira
+                         de seus clientes para a condução e melhoria da gestão organizacional.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+
+                <!--auteração-->
+                <div class="row pt-5 pb-3">
+
+                    <div class="col-md-4 mt-2 mb-2">
+                        <h4>Valores</h4>
+                    </div>
+
+                </div>
+                <!--auteração-->
+
+
+
+                <div class="card  p-3">
+                    <div class="card-text">Ajudamos as empresas a identificar as maiores oportunidades
+                         e as apoiamos na implementação,para que melhorem seus resultados.
+                    </div>
+                </div>
+            </div>
         </div>
+        
+    </div>
+    
+
+    <!-- Fim do Conteudo da pagina Sobre-->
+
+
+     <!-- Footer -->
+     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Social media -->
+        <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Conecte-se conosco nas redes sociais:</span>
+            </div>
+            <div>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <!-- Social media -->
+
+        <!-- Links -->
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-code"></i>
+                        CollaboraPro</h6>
+                    <p>Desenvolvendo soluções de software personalizadas para impulsionar seu
+                        negócio.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Produtos</h6>
+                    <p><a href="#!" class="text-reset">Desenvolvimento Personalizado</a></p>
+                    <p><a href="#!" class="text-reset">Equipe Especializada</a></p>
+                    <p><a href="#!" class="text-reset">Soluções Inovadoras</a></p>
+                    <!-- Adicione mais produtos conforme necessário -->
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Links Úteis</h6>
+                    <p><a href="#!" class="text-reset">Blog</a></p>
+                    <p><a href="#!" class="text-reset">Contato</a></p>
+                    <p><a href="#!" class="text-reset">Clientes</a></p>
+                    <p><a href="#!" class="text-reset">Sobre</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                    <p><i class="fas fa-home me-3"></i> Rua Preguiça, Guarulhos, São Paulo</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@CollaboraPro.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +55 123 456 789</p>
+                </div>
+            </div>
+        </section>
+        <!-- Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright: <a class="text-reset fw-bold" href="">CollaboraPro</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>                            
 </body>
 
 </html>
