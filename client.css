@@ -1,29 +1,27 @@
 .card {
-    transition: transform 0.3s;
+    min-height: 300px; /* Defina a altura mínima desejada para o card */
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column; /* Empilha os elementos verticalmente */
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-/* Estilo do título do card */
 .card-title {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-/* Cor do texto no card */
 .card-text {
     color: #555;
 }
 
-/* Rodapé do card */
 .card-footer {
     background-color: #f8f9fa;
     text-align: center;
 }
 
-/* Estilo do botão "Detalhes" */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -33,7 +31,6 @@
     background-color: #0056b3;
 }
 
-/* Estilos para os modais */
 .modal-header {
     background-color: #007bff;
     color: #fff;
@@ -51,7 +48,6 @@
     padding: 1rem;
 }
 
-/* Ajuste no tamanho da logo dos clientes nos modais e torna em um círculo */
 .modal-body .client-logo {
     max-width: 100%;
     height: auto;
@@ -61,24 +57,21 @@
     height: 100px; /* Ajuste o tamanho desejado */
 }
 
-/* Ajuste no estilo dos botões nos modais */
 .modal-footer button {
     min-width: 120px;
 }
 
-/* Adicional: Adicionando estilo ao botão de fechar o modal */
 .modal-header .btn-close {
     color: #fff;
 }
 
-/* Adiciona mais estilo ao projeto destaque */
 #projetoDestaqueModal .modal-dialog {
     max-width: 800px; /* Ajuste a largura máxima desejada */
 }
 
 #projetoDestaqueModal .modal-body img {
     width: 100%;
-    border-radius: 8px 8px 0 0; /* Adiciona bordas arredondadas apenas no topo */
+    border-radius: 8px 8px 0 0;
     object-fit: cover;
 }
 
@@ -109,3 +102,12 @@
 #projetoDestaqueModal .modal-footer .btn-primary:hover {
     filter: brightness(90%);
 }
+
+.card img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner pai */
+    height: 300px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
+}
+
+
+

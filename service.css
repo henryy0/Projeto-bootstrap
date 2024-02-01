@@ -1,15 +1,22 @@
+/* Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #ffffff;
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    color: #343a40;
 }
 
+/* Header */
 header {
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: #000;
     padding: 40px 0;
+    text-align: center;
 }
 
 header h1 {
@@ -22,24 +29,18 @@ header p {
     margin-bottom: 20px;
 }
 
-section.about {
-    background-color: #ffffff;
+/* Sections */
+section {
     padding: 40px 0;
 }
 
-section.about h2 {
+h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #343a40;
 }
 
-section.about p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-section.about img {
+/* About Section */
+.about img {
     border-radius: 10px;
     margin-top: 20px;
     width: 100%;
@@ -47,15 +48,9 @@ section.about img {
     height: auto;
 }
 
-section.services {
+/* Services Section */
+.services {
     background-color: #ffffff;
-    padding: 40px 0;
-}
-
-section.services h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #343a40;
 }
 
 .service-card {
@@ -80,56 +75,87 @@ section.services h2 {
 .service-card h5 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #343a40;
 }
 
 .service-card p {
     font-size: 1rem;
     line-height: 1.4;
-    color: #555;
 }
 
-section.portfolio {
-    background-color: #ffffff;
-    padding: 40px 0;
+/* Estilos para a seção de portfólio */
+.portfolio {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-section.portfolio h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #343a40;
+.portfolio h2 {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999; /* Garante que o título fique acima dos itens do portfólio */
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    color: #343a40; /* Cor mais escura para o título */
 }
 
 .portfolio-item {
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
+    width: calc(33.33% - 40px);
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .portfolio-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-section.testimonials {
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item-description {
+    margin-top: 20px;
+}
+
+.portfolio-item-title {
+    font-size: 1.8rem; /* Ajusta o tamanho do título do projeto */
+    margin-bottom: 10px;
+    color: #007bff; /* Cor mais vibrante para o título */
+}
+
+.portfolio-item-description p {
+    font-size: 1.2rem; /* Ajusta o tamanho do texto da descrição */
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.portfolio-item-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1.2rem; /* Ajusta o tamanho do botão */
+}
+
+.portfolio-item-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Testimonials Section */
+.testimonials {
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 40px 0;
-}
-
-section.testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.carousel-inner {
-    text-align: center;
 }
 
 .testimonial-card {
@@ -148,7 +174,6 @@ section.testimonials h2 {
 .testimonial-text {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #555;
 }
 
 .testimonial-author {
@@ -157,13 +182,13 @@ section.testimonials h2 {
     color: #007bff;
 }
 
+/* Footer */
 footer {
     background-color: #343a40;
-    color: white;
+    color: #fff;
     padding: 20px 0;
 }
 
 footer p {
-    margin: 0;
     font-size: 1rem;
 }

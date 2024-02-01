@@ -79,15 +79,17 @@ label {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+    border-radius: 50%; /* Faz com que o contorno seja circular */
+    padding: 10px; /* Ajuste conforme necessário para o espaçamento desejado */
+    transition: all 0.3s ease; /* Transição suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-/* Adicione as seguintes linhas para ajustar o ícone se necessário */
 .theme-toggle i {
-    font-size: 20px;
+    font-size: 20px; /* Ajuste o tamanho do ícone conforme necessário */
 }
-
 
 .theme-toggle:hover {
-    color: #0056b3;
+    transform: translateY(-50%) scale(1.1); /* Escala ligeiramente ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
 }
-

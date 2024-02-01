@@ -1,132 +1,207 @@
 body {
-    background-color: #ebebeb;
-    font-family: 'Arial', sans-serif;
-  }
+  background-color: #ebebeb;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
 
-  .card, .list-group-item {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-  }
+/* CSS das Notícias Principais */
+.card {
+  width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+  border-radius: 15px; /* Arredonda as bordas do contêiner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  transition: box-shadow 0.3s ease; /* Adiciona transição suave */
+  overflow: hidden; /* Impede que partes da imagem vazem para fora do contêiner */
+}
 
-  .card:hover, .list-group-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
 
-  .btn-primary {
-    background-color: #e44d26;
-    border-color: #e44d26;
-    transition: background-color 0.3s ease;
-  }
+.card img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+  height: 100%; /* Permite que a altura da imagem seja ajustada automaticamente para manter a proporção */
+  display: block; /* Remove espaços extras ao redor da imagem */
+  object-fit: cover; /* Garante que a imagem preencha o espaço disponível sem distorção */
+}
 
-  .btn-primary:hover {
-    background-color: #cc3d1e;
-    border-color: #cc3d1e;
-  }
 
-  h2, .card-title, .list-group-item .news-title {
-    color: #333;
-  }
+.list-group-item {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
 
-  .card-text, .list-group-item .news-description {
-    color: #555;
-  }
+.list-group-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-  .navbar {
-    background-color: #e44d26;
-  }
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+  transition: background-color 0.3s ease;
+}
 
-  .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-  }
+.btn-primary:hover {
+  background-color: #217dbb;
+  border-color: #217dbb;
+}
 
-  .navbar-dark .navbar-toggler-icon {
-    background-color: #fff;
-  }
+h2,
+.card-title,
+.list-group-item .news-title {
+  color: #333;
+}
 
-  .rounded-start {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-  }
+.card-text,
+.list-group-item .news-description {
+  color: #555;
+}
 
-  .news-image {
-    width: 100%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: transform 0.3s ease; /* Adicione a transição para destacar a imagem */
-  }
+.rounded-start {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
 
-  .news-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
+.news-image {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: transform 0.3s ease;
+}
 
-  .news-highlight {
-    color: #e44d26;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    transition: color 0.3s ease;
-  }
+.news-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-  .news-description {
-    color: #777;
-    font-size: 0.9rem;
-  }
+.news-highlight {
+  color: #3498db;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
 
-  .card:hover .news-highlight, .list-group-item:hover .news-title {
-    color: #cc3d1e;
-  }
+.news-description {
+  color: #777;
+  font-size: 0.9rem;
+}
 
-  .list-group-item .d-flex img {
-    border-radius: 15px 0 0 15px;
-  }
+.card:hover .news-highlight,
+.list-group-item:hover .news-title {
+  color: #217dbb;
+}
 
-  .list-group-item .p-3 {
-    width: 100%;
-  }
+.list-group-item .d-flex img {
+  border-radius: 15px 0 0 15px;
+}
 
-  /* Novo bloco de Notícias Super Destacadas */
-  .featured-news {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    margin-bottom: 20px;
-  }
+.list-group-item .p-3 {
+  width: 100%;
+}
 
-  .featured-news img {
-    width: 100%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: transform 0.3s ease; /* Adicione a transição */
-  }
+/* CSS das Notícias Super Destacadas */
+.featured-news {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  height: 300px; /* Ajuste a altura conforme necessário */
+}
 
-  .featured-news:hover img {
-    transform: scale(1.05); /* Adicione o efeito de destaque ao passar o mouse */
-  }
+.featured-news img {
+  width: 100%;
+  height: 100%; /* Altere a altura conforme necessário */
+  object-fit: cover; /* Garante que a imagem preencha o espaço disponível */
+  transition: transform 0.3s ease;
+  object-position: center; /* Centraliza a imagem */
+}
 
-  .featured-news .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-  }
+.featured-news:hover img {
+  transform: scale(1.05);
+}
 
-  .featured-news h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
+.featured-news .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
 
-  .featured-news p {
-    font-size: 1rem;
-    margin-bottom: 0;
-  }
+
+.featured-news h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.featured-news p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* CSS das Notícias Principais */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-highlight {
+  color: #3498db;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.card-text {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.card:hover .card-highlight {
+  color: #217dbb;
+}
+
+/* CSS das Notícias Pequenas */
+.list-group-item img {
+  height: 150px; /* Altura fixa desejada para as imagens */
+  object-fit: cover; /* Garante que a imagem seja exibida inteira */
+  border-radius: 15px 0 0 15px;
+}
+
+.list-group-item .d-flex img {
+  width: 100px; /* Largura desejada para as imagens */
+  height: 100px; /* Altura desejada para as imagens */
+  object-fit: cover; /* Garante que a imagem preencha o espaço disponível */
+  border-radius: 15px; /* Arredondamento da borda */
+}
